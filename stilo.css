@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.cabeçalho {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px #0000001a;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #0f0f0f;
+}
+header p {
+    font-size: 18px;
+    color: #555555;   
+}
+.section {
+    margin-bottom: 20px;
+}
+.section h2 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.section p, .section ul {
+    font-size: 16px;
+    color: #555555;
+    margin: 5px;
+    padding-top: 0.2px;
+    text-align: justify;
+}
+.section ul {
+    padding-left: 20px;
+}
+.info-contato, .escolaridade{
+    display: flex;
+    justify-content: space-between;
+}
+.info-contato div {
+    width: 48%;
+}
+
+footer{
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#linkFace, #linkgit{
+    color: #4bb1da;
+    text-decoration: none;
+}
