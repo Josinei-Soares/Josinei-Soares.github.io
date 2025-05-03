@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagens/logoinksul.png" type="image/x-icon"> <!--icone no titulo da pagina-->
+    <link rel="stylesheet" href="./style.css"> <!-- link o html com css-->
+    <title>Inksul</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" src="./imagens/logoinksul.png"></a>
+        </div>
+        <div id="redessociais">
+            <a href="https://www.instagram.com/inksulvacaria/#"><img  src="./icon/insta.png"></a>
+            <a href="https://www.facebook.com/inksul.com.br"><img  src="./icon/facebook.png"></a>
+            <a href="https://www.whatsapp.com/?lang=pt_BR"><img  src="./icon/whats.png"></a>
+        </div>
+    </header>
+    <h1>Inksul Computadores e serviços</h1>
+
+    <h3>A melhor impressão é a que fica!</h3>
+    <main>
+    <!--seção do carrossel-->
+    <section id="carrossel">
+        <div class="slides" id="slides">
+        <div class="slide"><img src="./imagens/img1.jpeg" alt="Slide 1 1120X580"></div>
+        <div class="slide"><img src="./imagens/img2.png" alt="Slide 2 1120X580"></div>
+        <div class="slide"><img src="./imagens/img3.png" alt="Slide 3 1120X580"></div>
+        </div>
+        <div class="navegacao">
+        <button onclick="moverSlide(-1)">❮</button>
+        <button onclick="moverSlide(1)">❯</button>
+        </div>
+    </section>
+    <!--codigo java script para o carrossel-->
+    <script>
+        let indice = 0;
+        function moverSlide(direcao) {
+        const slides = document.getElementById('slides');
+        const totalSlides = slides.children.length;
+        indice = (indice + direcao + totalSlides) % totalSlides;
+        slides.style.transform = `translateX(-${indice * 100}%)`;
+        }
+    </script>
+
+        <section id="historia">
+            <p>
+                Breve história sobre a empresa Inksul!
+            </p>
+        </section>
+        
+        <section class="servicos">
+            <a href="manutencao.html">
+                <div>  
+                    Manutenção <br>
+                    <img src="./icon/assistencia.png">
+                    <p> 
+                        Prestamos assistência técnica expecializadas em 
+                        impressoras jato de tinta, laserjet, ecotanque.
+                    </p>
+                </div>
+            </a>
+            <a href="outsourcing.html">
+            <div>
+                Outsourcing <br>
+                <img src="./icon/outsourcing.png">
+                <p> 
+                    Outsourcing de impressão é a prática de terceirizar
+                    a gestão de seus dispositivos de impressão e serviços
+                    relacionados a um parceiro especializado.
+                </p>
+            </div>
+            </a>
+            <a href="consumiveis.html">
+            <div>
+                Consumíveis <br>
+                <img src="./icon/suprimentos.png">
+                <p> 
+                    Comercializamos um linha com diversos modelos de
+                    consumives para sua impressora.
+                </p>
+            </div>
+            </a>
+            <a href="download.html">
+                <div>  
+                    Download <br>
+                    <img src="./icon/download.png">
+                    <p> 
+                        Aqui você encontra os teste de cores e textos para testar sua impressora.
+                    </p>
+                </div>
+            </a>
+        </section>
+
+        <h1 id="titulo_galeria"><img src="./icon/alfineSemFundo.png"alt="alfinete"> Dicas Importantes</h1>
+        <section class="galeria">
+            <img src="./imagens/imagem1.jpg">
+            <img src="./imagens/imagem2.jpg">
+            <img src="./imagens/imagem3.jpg">
+            <img src="./imagens/imagem4.jpg">
+            <img src="./imagens/imagem5.jpg">
+            <img src="./imagens/imagem6.jpg">
+            <img src="./imagens/imagem7.jpg">
+            <img src="./imagens/imagem8.jpg">
+            <img src="./imagens/imagem9.jpg">
+            <img src="./imagens/imagem10.jpg">
+            <img src="./imagens/imagem11.jpg">
+            <img src="./imagens/imagem12.jpg">
+        </section>
+
+        <h1 id="titulo_parceiros"><img src="./icon/alfineSemFundo.png"alt="alfinete"> Empresas parceiras</h1>
+        <section class="parceiros">
+            <a href="https://www.rar.ind.br/marcas/rasip" target="_blank"><img src="./logos/rasip.png" alt="Rasip"></a>
+            <a href="https://agroschio.agr.br" target="_blank"><img src="./logos/schio.png" alt="Schio"></a>
+            <a href="http://www.agrospe.com.br/" target="_blank"><img src="./logos/agrospe.png" alt="Agrospe"></a>
+            <a href="https://www.cunhadospecas.com.br" target="_blank"><img src="./logos/cunhado-pecas.png" alt="Cunhados Peças"></a>
+            <a href="https://www.frutini.com.br" target="_blank"><img src="./logos/FRUTINI.webp" alt="Frutini"></a>
+            <a href="https://www.cooperval.com.br" target="_blank"><img src="./logos/cooperval.png" alt="Cooperval"></a>
+            <a href="https://lazzeri.com.br" target="_blank"><img src="./logos/lazzeri.png" alt="Lazzeri"></a>
+            <a href="https://moinhovacaria.com.br" target="_blank"><img src="./logos/moinho.png" alt="Moinho Vacaria"></a>
+            <a href="https://www.assistencialcasf.com.br" target="_blank"><img src="./logos/casf.png" alt="Assistencial Casf"></a>
+            <a href="https://agrosserra.com.br" target="_blank"><img src="./logos/agrosserra.png" alt="Agrosserra"></a>
+            <a href="https://www.campagnaro.com.br" target="_blank"><img src="./logos/campagnaro.png" alt="Campagnaro"></a>
+            <a href="https://adecont.com.br" target="_blank"><img src="./logos/adecont.png" alt="Adecont Contabilidade"></a>
+            <a href="https://linktr.ee/vacariana" target="_blank"><img src="./logos/vacariana.png" alt="Vacariana"></a>
+            <a href="https://www.boff.com.br" target="_blank"><img src="./logos/boff-industria.png" alt="Boff Indústria"></a>
+            <a href="https://brehm.com.br" target="_blank"><img src="./logos/brehm.png" alt="Brehm Logística"></a>
+            <a href="https://damaceltransportes.com" target="_blank"><img src="./logos/damacell.png" alt="Damacel Transportes"></a>
+            <a href="https://transmaso.com.br" target="_blank"><img src="./logos/transmaso.png" alt="TRANSMASO"></a>
+            <a href="https://www.facebook.com/zambancereais" target="_blank"><img src="./logos/zambam.png" alt="Zambam Cereais"></a>
+            <a href="https://www.ourofertil.com.br" target="_blank"><img src="./logos/ouro-fertil.png" alt="ouro-feril"></a>
+            <a href="https://www.colegiogustavo.com.br" target="_blank"><img src="./logos/gustavo.png" alt="Colegio-gustavo"></a>
+        </section>
+    </main>
+</body>
+<footer>
+    <p class="rodape">&copy Todos os Direitos Reservados</p>
+    <p class="rodape">Desenvolvido por 
+    <a href="contato.html" target="_blank">Josinei Soares</a></p>
+</footer>
+</html>

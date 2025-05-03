@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon/contatos.png" type="image/x-icon"> <!--icone no titulo da pagina-->
+    <link rel="stylesheet" href="./styleContato.css"> <!-- link o html com css-->
+    <title>Contato</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h3>Informações de contatos com o desenvolvedor!</h3>
+        </header>  
+
+        <div class="iconesContatos">  
+            <a href="index.html"><img class="home" src="./icon/voltar.png"></a>
+            <a href="#"><img class="insta" src="./icon/insta.png"></a>
+            <a href="https://www.facebook.com/Josinei.R.Soares/"><img class="face" src="./icon/facebook.png"></a>
+            <a href="#"><img class="whats" src="./icon/whats.png"></a>
+            <a href="https://github.com/Josinei-Soares"><img class="github" src="./icon/github.png"></a>
+        </div>
+        
+        <fieldset>
+            <legend>Informação de Contato:</legend>
+            <form>
+                <label for="name">Nome: </label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email: </label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="comentarios">Comentários:</label><br>
+                <textarea name="comentarios" id="comentarios"
+                rows="4" cols="40" placeholder="Digite seu comentario aqui"></textarea><br>
+                <button onclick="alert('Email enviado com Sucesso!')">Enviar</button>
+            </form>
+        </fieldset>
+    </section>
+</body>
+<footer>
+    <p class="rodape">&copy Todos os Direitos Reservados</p>
+</footer>
+</html>
