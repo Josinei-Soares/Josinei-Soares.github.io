@@ -31,10 +31,10 @@ body{
     margin: auto; /*ajustou todo o bloco no centro*/
 }
 
-header h3{
+header h1{
     text-align: center;
     padding-top: 40px;
-    font-size: 30px;
+    font-size: 30pt;
     font-family:"font_inksul";
 }
 
