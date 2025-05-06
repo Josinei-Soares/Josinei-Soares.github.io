@@ -69,18 +69,67 @@ h1 {
     padding: 20px;
 }
 
+/* texto explicativo*/
+.explicativo{
+    background: #a52a2a;
+    align-items: center;
+    height: auto;
+    box-shadow: 5px 5px 15px #0000004d;
+    font-family:"fonte_inksul";
+    font-size: 22pt;
+    color: white;
+    border-radius: 5px;
+    padding: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.corpo p{
+    font-size: 20pt;
+}
+.corpo img{
+    width: 580px;
+    height: 420px;
+    border-radius: 10px;
+}
+
+/* config do botão orçamento*/
+.botao_orcamento {
+    text-align: center;
+  }
+
+.botao_orcamento a{
+    /*config do texto do botão*/
+    text-decoration:none;
+    color:#ffffff;
+    display: inline-block;
+    font-size: 18pt;
+    /*config do botão*/
+    width: 220px;
+    background-color: #0486ff;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+.botao_orcamento:hover{
+    transform: scale(1.1);
+    transition: (3s); 
+}
+
 /* stilos para p rodape*/
 footer{
     background-color: #a52a2a;
     padding: 1rem;
-    color: #d4d2d2;
+    color: #ffffff;
     text-align: center;
-    font-family: "Playwrite HU", cursive;
     border-radius: 5px;
+    font-size: 15pt;
 }
 footer a{
     margin-top: 60px;
     text-decoration: none;
     color: #000000;
-    font-size: 20px;
+    font-size: 15pt
 }

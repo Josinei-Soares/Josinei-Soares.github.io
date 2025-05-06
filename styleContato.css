@@ -42,7 +42,10 @@ header h1{
 .iconesContatos{
     display: flex;
     justify-content: center;
+    gap: 5px;
+    padding-bottom: 20px;
 }
+
 /*config do formulario*/
 fieldset{
     border: 2px solid #a52a2a;
@@ -61,12 +64,7 @@ footer{
     padding: 1rem;
     color: #d4d2d2;
     text-align: center;
-    font-family: "Playwrite HU", cursive;
     border-radius: 5px;
+    font-size: 15pt;
 }
-footer a{
-    margin-top: 60px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
-}
+
