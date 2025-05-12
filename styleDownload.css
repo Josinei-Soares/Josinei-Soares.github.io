@@ -41,6 +41,7 @@ header{
     justify-content: space-between;
     gap: 5x;
 }
+
 h1 {
     text-align: center;
     font-family: 'font_inksul';
@@ -57,7 +58,6 @@ h1 {
     flex-direction: column;
     height: auto;
     box-shadow: 5px 5px 15px #0000004d;
-    font-family:"fonte_inksul";
     font-size: 1.5rem;
     color: white;
     border-radius: 5px;
@@ -89,7 +89,6 @@ h1 {
     width: 50px;
     float: left;
     margin-right: 25px;
-    vertical-align: top;
 }
 
 /*config dos botoes para download*/
@@ -138,3 +137,53 @@ footer a{
     font-size: 15pt
 }
 
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        margin: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .explicativo {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+
+    #titulo_download {
+        flex-direction: column;
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    #titulo_download img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+
+    .testes div img,
+    .drivers div a img {
+        width: 100%;
+        height: auto;
+    }
+}
