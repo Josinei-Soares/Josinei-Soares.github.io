@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: "font_inksul";
-    src: url('./fonts/ITC\ Tiffany\ Std\ Heavy\ Italic.otf') format('opentype');
+    src: url('./fonts/ITC Tiffany Std Heavy Italic.otf') format('opentype');
 }
 
 /*fundo da pagina*/
@@ -20,7 +20,7 @@ html {
 /*corpo da pagina*/
 body{
     background-color: white;
-    max-width: 1400px;
+    max-width: 90%;
     height: auto; 
      /* conforme for aumentando a pagina pode deixa em height:auto;*/
     border-radius: 10px;
@@ -34,7 +34,7 @@ header{
     display: flex;
     text-align: center;
     font-size: 15px;
-    font-family:'font_inksul';
+    font-family:'font_inksul',serif;
     padding: 5px;
     justify-content: space-between;
     gap: 5px;
@@ -42,26 +42,23 @@ header{
 h1 {
     text-align: center;
     font-family: 'font_inksul';
-    font-size: 30pt;
+    font-size: 2rem;
     padding: 20px;
 }
 
 /* texto explicativo*/
 .explicativo{
     background: #a52a2a;
-    align-items: center;
-    height: auto;
     box-shadow: 5px 5px 15px #0000004d;
-    font-family:"fonte_inksul";
     font-size: 22pt;
     color: white;
     border-radius: 5px;
-    padding: 40px;
-    margin-bottom: 50px;
+    padding: 20px;
+    margin:20px 0;
     text-align: center;
 }
 
-/*config para titulo*/
+/*config do titulo*/
 #recargas {
     background-color: #fff88c;
     width: fit-content;
@@ -73,16 +70,43 @@ h1 {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     position: relative;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /*permite quebra em telas pequenas*/
 }
-
 #recargas img {
     height: 50px;
     width: 50px;
-    float: left;
-    margin-right: 25px;
-    vertical-align: top;
 }
 
+/*-----------------------------*/
+body div {
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /*permite quebra em telas pequenas*/
+    align-items: center;
+    justify-content: center; /* Alinha no centro horizontal */
+    gap: 10px; /*espacamento entre colunas*/
+}
+
+/*config cartuchos*/
+.modelos div img{
+    height: 250px;
+    color: #000000;
+    box-shadow: 5px 5px 15px #000000a1;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+}
+/*-------------------------------*/
 /*config dos botoes para recargas*/
 body div {
     margin: 5px;
@@ -108,9 +132,7 @@ body div {
     align-items: center; /* Centraliza horizontalmente */
     text-align: center;
 }
-
-/*--------------------------------------*/
-/* config do botão orçamento cartuchos*/
+/* config do botão orçamento tonners*/
 .botao_orcamento_cartuchos {
     text-align: center;
   }
@@ -130,11 +152,10 @@ body div {
     margin-bottom: 40px;
 }
 
-.botao_orcamento_cartuchos :hover{
+.botao_orcamento_tonners :hover{
     transform: scale(1.1);
     transition: (3s); 
 }
-/*-------------------------------------*/
 
 /*config tonner*/
 .tonners div img{
@@ -152,7 +173,7 @@ body div {
     text-align: center;
 }
 
-/*--------------------------------------*/
+
 /* config do botão orçamento tonners*/
 .botao_orcamento_tonners {
     text-align: center;

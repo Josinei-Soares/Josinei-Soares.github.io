@@ -8,8 +8,8 @@
 
 /*fundo da pagina*/
 html {
-    margin:0px;
-    padding: 0px;
+    margin:0;
+    padding: 0;
     box-sizing: border-box ;
     background-image: url('./imagens/textura_fundo.jpg');
     background-size: cover;
@@ -20,7 +20,8 @@ html {
 /*corpo da pagina*/
 body{
     background-color: white;
-    max-width: 1400px;
+    /*max-width: 1400px;*/
+    width: 90%; /*responsividade*/
     height: auto; 
      /* conforme for aumentando a pagina pode deixa em height:auto;*/
     border-radius: 10px;
@@ -34,15 +35,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(90% - 5px);
+    flex-wrap: wrap; /*para quebrar em telas menores*/
+    width: 90%;
     gap: 10px;
     margin: 45px auto;
 
 }
 
 .corpo div{
-    width: 580px;
-    height: 500px;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
     border-radius: 5px;
     background-color: #eeeeee;
     padding: 10px;
@@ -54,6 +57,7 @@ body{
 /*config cabecalho e titulo*/
 header{
     display: flex;
+    flex-wrap: wrap;  /*para quebrar em telas menores*/
     text-align: center;
     font-size: 15px;
     font-family:'font_inksul';
@@ -65,7 +69,7 @@ header{
 h1 {
     text-align: center;
     font-family: 'font_inksul';
-    font-size: 30pt;
+    font-size: 2rem;
     padding: 20px;
 }
 
@@ -75,7 +79,6 @@ h1 {
     align-items: center;
     height: auto;
     box-shadow: 5px 5px 15px #0000004d;
-    font-family:"fonte_inksul";
     font-size: 22pt;
     color: white;
     border-radius: 5px;
@@ -88,8 +91,9 @@ h1 {
     font-size: 20pt;
 }
 .corpo img{
-    width: 580px;
-    height: 420px;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -111,15 +115,15 @@ h1 {
     padding: 20px;
     border-radius: 30px;
     margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .botao_orcamento:hover{
-    transform: scale(1.1);
-    transition: (3s); 
+    transform: scale(1.1);   
 }
 
 /* stilos para p rodape*/
-footer{
+footer {
     background-color: #a52a2a;
     padding: 1rem;
     color: #ffffff;
@@ -127,9 +131,10 @@ footer{
     border-radius: 5px;
     font-size: 15pt;
 }
-footer a{
+footer a {
     margin-top: 60px;
     text-decoration: none;
     color: #000000;
-    font-size: 15pt
+    font-size: 15pt;
 }
+

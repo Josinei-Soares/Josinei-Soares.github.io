@@ -2,12 +2,14 @@
 
 @font-face {
     font-family: "font_inksul";
-    src: url('./fonts/ITC\ Tiffany\ Std\ Heavy\ Italic.otf') format('opentype');
+    src: url('./fonts/ITC Tiffany Std Heavy Italic.otf') format('opentype');
 }
 
 /* stilos da pagina de contato*/
 img{
     width: 64px;
+    max-width: 100%; /*torna a imagem responsiva*/
+    height: auto;
 }
 
 /*config para corpo*/
@@ -23,18 +25,20 @@ html {
 
 body{
     background-color: white;
-    max-width: 1400px;
+    max-width: 90%; /*deixa responsivel mas mostrando o fundo*/ 
     height: auto;  
     border-radius: 10px;
     border: 1px solid #e4e4e4;
     box-shadow: 0px 5px 10px #0000001a;
     margin: auto; /*ajustou todo o bloco no centro*/
+
 }
 
+/* titulo */
 header h1{
     text-align: center;
     padding-top: 40px;
-    font-size: 30pt;
+    font-size: 2rem; /*usando unidade relativa */
     font-family:"font_inksul";
 }
 
@@ -42,7 +46,8 @@ header h1{
 .iconesContatos{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 10px; 
+    flex-wrap: wrap; /* permite quebra de linha em telas menores*/
     padding-bottom: 20px;
 }
 
@@ -52,10 +57,9 @@ fieldset{
     color:#000000;
     border-radius: 4px;
     padding: 1rem;
-    margin: 30px;
-    width: 850px;
-    margin:auto;
-    margin-bottom: 20px;
+    margin: 30px auto 20px auto;
+    max-width: 90%;
+    box-sizing: border-box;    
 }
 
 /* stilos para p rodape*/
@@ -65,6 +69,5 @@ footer{
     color: #d4d2d2;
     text-align: center;
     border-radius: 5px;
-    font-size: 15pt;
+    font-size: 1rem; /*unidade relativa*/
 }
-
