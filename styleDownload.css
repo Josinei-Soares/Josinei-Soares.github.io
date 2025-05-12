@@ -31,10 +31,6 @@ body{
 
 /*config cabecalho e titulo*/
 header{
-    display: flex;
-    flex-wrap: wrap; /* permite quebrar em tela menores*/
-    text-align: center;
-    align-items: center;
     font-size: 1rem;
     font-family:'font_inksul';
     padding: 5px;
@@ -70,7 +66,7 @@ h1 {
 #titulo_download {
     background-color: #fff88c;
     width: fit-content;
-    max-width: 90%;
+    max-width: 60%;
     padding: 20px 30px;
     margin: auto;
     font-family: "font_inksul";
@@ -81,7 +77,6 @@ h1 {
     border-radius: 8px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 #titulo_download img {
@@ -98,15 +93,14 @@ body div {
     text-align: center;
     align-items: center;
     justify-content: center; /* Alinha no centro horizontal */
-    display: flex; 
-    flex-wrap: wrap; /*permite quebra em tela menores*/
     gap: 5px; /*espacamento entre colunas*/
 }
 
 .testes div img {
-    height: 300px;
+    height: 250px;
     max-width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
+    flex-wrap: wrap;
 }
 
 .testes a {
