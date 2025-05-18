@@ -48,7 +48,7 @@ header h1{
     justify-content: center;
     gap: 10px; 
     flex-wrap: wrap; /* permite quebra de linha em telas menores*/
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 /*config do formulario*/

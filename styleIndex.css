@@ -255,25 +255,3 @@ footer a {
     font-size: 15pt;
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-    .servicos,
-    .parceiros {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .galeria img {
-        width: calc(50% - 20px);
-    }
-}
-
-@media (max-width: 600px) {
-    .servicos,
-    .parceiros {
-        grid-template-columns: 1fr;
-    }
-
-    .galeria img {
-        width: 100%;
-    }
-}

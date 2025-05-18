@@ -14,10 +14,22 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 html{
     background-image: url('./imagens/textura_fundo.jpg');
+}
+/*corpo centro da pagina*/
+body{
+    background-color: white;
+    max-width: 90%;
+    height: auto; 
+     /* conforme for aumentando a pagina pode deixa em height:auto;*/
+    border-radius: 10px;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0px 5px 10px #000000a1;
+    margin: auto; /*ajustou todo o bloco no centro*/
 }
 
 /*config cabecalho e titulo*/
@@ -59,7 +71,7 @@ h1 {
     padding: 20px 30px;
     margin: auto;
     font-family: "font_inksul";
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #000000;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     position: relative;
@@ -102,17 +114,6 @@ body div {
     height: 200px;
     text-decoration: none; /*tira a cor de link*/
     color: black; /*define a cor para preto*/
-}
-
-body{
-    background-color: white;
-    max-width: 1400px;
-    height: auto; 
-     /* conforme for aumentando a pagina pode deixa em height:auto;*/
-    border-radius: 10px;
-    border: 1px solid #e4e4e4;
-    box-shadow: 0px 5px 10px #000000a1;
-    margin: auto; /*ajustou todo o bloco no centro*/
 }
 
 /* stilos para p rodape*/

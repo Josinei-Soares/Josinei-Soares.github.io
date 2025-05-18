@@ -67,7 +67,7 @@ h1 {
     padding: 20px 30px;
     margin: auto;
     font-family: "font_inksul";
-    font-size: 32px;
+    font-size: 1.8rem;
     color: #000000;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     position: relative;
@@ -119,7 +119,7 @@ body div {
     text-decoration:none;
     color:#ffffff;
     display: inline-block;
-    font-size: 18pt;
+    font-size: 1.5rem;
     /*config do botão*/
     width: 220px;
     background-color: #0486ff;
