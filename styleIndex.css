@@ -37,7 +37,7 @@ header{
 h1{
     text-align: center;
     font-family:"font_inksul", serif; /*fallback adicionado*/
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 
 }
 
@@ -110,7 +110,7 @@ h3{
 /* serviços */
 .servicos{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); /* se ajusta comforme o tamanho da tela*/
     gap: 20px;
     margin:0 20px 40px 20px;
     font-family:"font_inksul";
@@ -133,6 +133,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .servicos > a:hover{
@@ -197,6 +198,18 @@ h3{
     transition: transform 0.3s;
     transform: scale(1.3);
 }
+@media (min-width: 600px) {
+    .galeria img {
+        width: calc(50% - 20px); /* 2 por linha em telas médias */
+    }
+
+}
+
+@media (min-width: 900px) {
+    .galeria img {
+        width: calc(25% - 20px); /* 4 por linha em telas grandes */
+    }
+}
 
 /*  parceiros */
 #titulo_parceiros {
@@ -224,23 +237,33 @@ h3{
 .parceiros {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /*antes 5px*/
     align-items: center;
     justify-items: center;
     margin-bottom: 25px;
 }
 
 .parceiros img {
-    max-width: 250px;
+    max-width: 250px; /* Limite máximo para não ficar muito grande */
     height: auto;
     transition: transform 0.3s;
     filter: grayscale(100%);
+    object-fit: contain; /*garente que o objeto matenha a proporção*/
 }
 .parceiros img:hover{
     transform: scale(1.3);
     filter: grayscale(0%);
 }
+
+@media (max-width: 768px) {
+  .parceiros {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
 /* stilos para p rodape*/
 footer {
     background-color: #a52a2a;
