@@ -70,10 +70,10 @@ h1 {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     position: relative;
     border-radius: 8px;
-    display: flex;
+    /*display: flex;
     align-items: center;
     gap: 20px;
-    /*flex-wrap: wrap; /*permite quebra em telas pequenas*/
+    flex-wrap: wrap; /*permite quebra em telas pequenas*/
 }
 #recargas img {
     height: 50px;
