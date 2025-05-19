@@ -72,8 +72,6 @@ h1 {
     border-radius: 8px;
     display: flex;
     align-items: center;
-    /*gap: 20px;
-    flex-wrap: wrap; /*permite quebra em telas pequenas*/
 }
 #recargas img {
     height: 50px;
