@@ -76,7 +76,7 @@ h1 {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     position: relative;
     border-radius: 8px;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 #titulo_download img {
