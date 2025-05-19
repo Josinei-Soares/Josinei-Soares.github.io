@@ -67,15 +67,13 @@ h1 {
     padding: 20px 30px;
     margin: auto;
     font-family: "font_inksul";
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #000000;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     position: relative;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap; /*permite quebra em telas pequenas*/
 }
 #locacao img {
     height: 50px;
