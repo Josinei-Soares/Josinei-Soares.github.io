@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Patrick+Hand&family=Playwrite+HU:wght@100..400&family=Rock+Salt&display=swap');
+
+
+@font-face {
+    font-family: "font_inksul";
+    src: url('../fonts/ITC\ Tiffany\ Std\ Heavy\ Italic.otf') format('opentype');
+}
+
+/*config para corpo*/
+html {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+html{
+    background-image: url('../imagens/textura_fundo.jpg');
+}
+/*corpo centro da pagina*/
+body{
+    background-color: white;
+    max-width: 90%;
+    height: auto; 
+     /* conforme for aumentando a pagina pode deixa em height:auto;*/
+    border-radius: 10px;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0px 5px 10px #000000a1;
+    margin: auto; /*ajustou todo o bloco no centro*/
+}
+
+/*config cabecalho e titulo*/
+/* folha de stilo nav.css*/
+
+h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'font_inksul';
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* texto explicativo*/
+.explicativo{
+    background: #a52a2a;
+    align-items: center;
+    height: auto;
+    box-shadow: 5px 5px 15px #0000004d;
+    font-family:"fonte_inksul";
+    font-size: 2rem;
+    color: white;
+    border-radius: 5px;
+    padding: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/*config para titulo*/
+#titulo_download {
+    background-color: #fff88c;
+    width: fit-content;
+    padding: 20px 30px;
+    margin: auto;
+    font-family: "font_inksul";
+    font-size: 1.4rem;
+    color: #000000;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    border-radius: 8px;
+    /*flex-wrap: wrap;*/
+}
+
+#titulo_download img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 25px;
+}
+
+/*config dos botoes para download*/
+body div {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center; /* Alinha no centro horizontal */
+    display: flex; 
+    gap: 5px; /*espacamento entre colunas*/
+    flex-wrap: wrap;
+}
+
+.testes div img {
+    height: 300px;
+    text-decoration: none; /*tira a cor de link*/
+    color: black; /*define a cor para preto*/
+}
+
+.testes a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18pt;
+}
+
+.drivers div a img{
+    height: 200px;
+    text-decoration: none; /*tira a cor de link*/
+    color: black; /*define a cor para preto*/
+}
+
+/* stilos para p rodape*/
+/*folha de stilo footer.css*/

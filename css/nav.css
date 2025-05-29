@@ -1,0 +1,99 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background-color: #a52a2a;
+    padding: 10px 0px;
+    z-index: 1000;
+}
+
+nav header {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente todos os filhos */
+    align-items: center;      /* Alinha verticalmente */
+    gap: 30px;                /* Espaço entre logo, menu e redes sociais */
+}
+
+nav header > div,
+nav header > ul {
+    flex: 1;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Logo */
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    padding: 5px;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Redes sociais */
+#redessociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#redessociais img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Padding do body para compensar o nav fixo */
+body {
+    padding-top: 80px;
+}
+
+/* NAVEGAÇÃO*/
+#cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#cabecalho img {
+    width: 45px;
+    height: 45px;
+}
+/*config dos botoes */
+
+.iconesContatos{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    flex-wrap: wrap; /* permite quebra de linha em telas menores*/
+}

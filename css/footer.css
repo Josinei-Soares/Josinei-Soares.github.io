@@ -1,0 +1,14 @@
+footer {
+    background-color: #a52a2a;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15pt;
+}
+footer a {
+    margin-top: 60px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 15pt;
+}
