@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imagens/logoinksul.png" type="image/x-icon"> <!--icone no titulo da pagina-->
-    <link rel="stylesheet" href="./styleIndex.css"> <!-- link o html com css-->
+    <link rel="stylesheet" href="./css/styleIndex.css"> <!-- link o html com css-->
+    <link rel="stylesheet" href="./css/footer.css"> <!-- link para css do footer-->
+    <link rel="stylesheet" href="./css/nav.css"> <!--link para o css nav-->
     <title>Inksul</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="index.html"><img id="logo" src="./imagens/logoinksul.png"></a>
-        </div>
-        <div id="redessociais">
-            <a href="https://www.instagram.com/inksulvacaria/#" target="_blank"><img  src="./icon/insta.png"></a>
-            <a href="https://www.facebook.com/inksul.com.br" target="_blank"><img  src="./icon/facebook.png"></a>
-            <a href="https://wa.me/5432311166?text=Ola! Gostaria de saber se " target="_blank"><img  src="./icon/whats.png"></a>
-        </div>
-    </header>
+    <!-- menu de navegação -->
+    <nav>
+        <header>
+            <div id="logo">
+                <a href="index.html"><img  src="./imagens/logoinksul.png"></a>
+            </div>
+            <ul>
+                <li><a href="#historia">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#titulo_galeria">Galeria</a></li>
+                <li><a href="#titulo_parceiros">Parceiros</a></li>
+            </ul>
+            <div id="redessociais">
+                <a href="https://www.instagram.com/inksulvacaria/#" target="_blank"><img  src="./icon/insta.png"></a>
+                <a href="https://www.facebook.com/inksul.com.br" target="_blank"><img  src="./icon/facebook.png"></a>
+                <a href="https://wa.me/5432311166?text=Ola! Gostaria de saber se " target="_blank"><img  src="./icon/whats.png"></a>
+            </div>
+        </header>
+    </nav>
+   
     <h1>Inksul Computadores e serviços</h1>
 
     <h3>A melhor impressão é a que fica!</h3>
@@ -30,24 +42,14 @@
         <div class="slide"><img src="./imagens/img3.png" alt="Slide 3 1120X580"></div>
         </div>
         <div class="navegacao">
-        <button onclick="moverSlide(-1)">❮</button>
-        <button onclick="moverSlide(1)">❯</button>
+        <button onclick="moverSlide(-1)" aria-label="Slide anterior">❮</button>
+        <button onclick="moverSlide(1)" aria-label="Próximo slide">❯</button>
         </div>
     </section>
-    <!--codigo java script para o carrossel-->
-    <script>
-        let indice = 0;
-        function moverSlide(direcao) {
-        const slides = document.getElementById('slides');
-        const totalSlides = slides.children.length;
-        indice = (indice + direcao + totalSlides) % totalSlides;
-        slides.style.transform = `translateX(-${indice * 100}%)`;
-        }
-    </script>
-
+        <!-- seção sobre a empresa-->
         <section id="historia">
             <p>
-                Breve história sobre a empresa Inksul!
+                A Inksul Computação e Serviços é uma empresa dedicada a oferecer soluções eficientes e personalizadas para atender às necessidades de seus clientes. Atuamos nos segmentos de manutenção de impressoras jato de tinta, ecotanque e laserjet e suprimentos. Nosso compromisso é proporcionar qualidade e agilidade para sua impressão, contribuindo para o crescimento e a modernização dos negócios que confiam em nossos serviços.
             </p>
         </section>
         
@@ -134,24 +136,13 @@
             <a href="https://www.colegiogustavo.com.br" target="_blank"><img src="./logos/gustavo.png" alt="Colegio-gustavo"></a>
         </section>
     </main>
-    <script>
-        const slides = document.querySelector('.slides');
-        const slideCount = document.querySelectorAll('.slide').length;
-        let index = 0;
-
-        function nextSlide() {
-            index = (index + 1) % slideCount;
-            slides.style.transform = `translateX(-${index * 100}%)`;
-        }
-
-        // Troca de slide a cada 5 segundos (5000 ms)
-        setInterval(nextSlide, 5000);
-</script>
+    <!--codigo java script para o carrossel-->
+    <script src="./js/carrossel.js"></script>
 </body>
 <footer>
-    <p class="rodape">&copy; Todos os Direitos Reservados</p>
+    <p class="rodape">&copy; Todos os Direitos Reservados - Inksul</p>
     <p class="rodape">Desenvolvido por 
-        <a href="contato.html" target="_blank">Josinei Soares</a>
+        <a href="contato.html" target="_blank"><strong>Josinei Soares</a> 🔧</strong>
     </p>
 </footer>
 </html>
