@@ -2,6 +2,8 @@ nav {
     position: fixed;
     top: 0;
     width: 90%;
+    left: 50%;
+    transform: translate(-50%);
     background-color: #a52a2a;
     padding: 10px 0px;
     z-index: 1000;
@@ -11,7 +13,7 @@ nav header {
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente todos os filhos */
     align-items: center;      /* Alinha verticalmente */
-    gap: 30px;                /* Espaço entre logo, menu e redes sociais */
+    gap: 15px;                /* Espaço entre logo, menu e redes sociais */
 }
 
 nav header > div,
@@ -20,6 +22,7 @@ nav header > ul {
     text-align: center;
     padding: 0px;
     margin: 0px;
+    gap: 5px;
 }
 
 /* Logo */
@@ -36,6 +39,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /*qubra de linha em tela menores*/
     margin: 0;
     padding: 0;
 }
@@ -61,6 +65,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /*qubra de linha em tela menores*/
     gap: 10px;
 
 }
@@ -80,6 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /*qubra de linha em tela menores*/
     gap: 10px;
 
 }

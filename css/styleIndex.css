@@ -104,6 +104,38 @@ h3{
     color: #ffffff;
 }
 
+/*---------------------------------------*/
+
+/* Celular pequeno (até 480px) */
+@media (max-width: 460px) {
+  #historia {
+    padding: 10px 10px 300px 10px;
+  }
+}
+
+/* Celular grande (481px até 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  #historia {
+    padding: 15px 15px 200px 15px;
+  }
+}
+
+/* Tablet (768px até 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #historia {
+    padding: 20px 20px 120px 20px;
+  }
+}
+
+/* Desktop (1025px ou mais) */
+@media (min-width: 1025px) {
+  #historia {
+    padding: 30px 30px 30px 30px;
+  }
+}
+
+/*--------------------------------------------*/
+
 /* serviços */
 .servicos{
     display: grid;

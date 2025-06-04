@@ -34,6 +34,9 @@ body{
 
 }
 
+/*config cabecalho
+/* folha de stilo nav.css*/
+
 /* titulo */
 h1{
     text-align: center;
@@ -41,7 +44,6 @@ h1{
     font-size: 2rem; /*usando unidade relativa */
     font-family:"font_inksul";
 }
-
 
 
 /*config do formulario
